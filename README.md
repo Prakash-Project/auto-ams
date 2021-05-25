@@ -1,0 +1,2 @@
+# auto-ams
+auto ams ;)
