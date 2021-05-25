@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const ams_url = "https://hrm.ingnepal.com/Security/Account/Login"
-const email = "your@email.com"
-const password = "test-test"
+const email = ""
+const password = ""
 
 async function run () {
     const browser = await puppeteer.launch();
@@ -12,7 +12,7 @@ async function run () {
     await page.type("#frmAttendanceQuickRequest #LoginID", email);
     await page.type("#frmAttendanceQuickRequest #LoginPassword", password);
     // await page.click('#frmAttendanceQuickRequest #submit');
-    await page.waitForTimeout(3000);
+    // await page.waitForTimeout(3000);
     await page.screenshot({path : 'screenshots-db/screenshot.png'});
     browser.close();
 }
