@@ -1,0 +1,23 @@
+{
+  "name": "auto-ams",
+  "version": "1.0.0",
+  "description": "auto ams ;)",
+  "main": "auto-ams.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shresthaprakash75/auto-ams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shresthaprakash75/auto-ams/issues"
+  },
+  "homepage": "https://github.com/Shresthaprakash75/auto-ams#readme",
+  "dependencies": {
+    "puppeteer": "^9.1.1"
+  }
+}
