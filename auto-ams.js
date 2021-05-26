@@ -2,11 +2,28 @@ const puppeteer = require('puppeteer');
 const ams_url = "https://hrm.ingnepal.com/Security/Account/Login";
 const email = "";
 const password = "";
-const in_out = "Out";
-// const in_out = "In";
 
+// input filter
+const in_put = process.argv[2];
+var in_out = "";
+if(in_put == "in" || in_put == "In" || in_put == "IN" || in_put == "iN"){
+    in_out = "In"
+}else if (in_put == "out" || in_put == "Out") {
+    in_out = "Out"
+}
+else{
+    console.log('Either type IN or OUT')
+    return
+}
+
+// core engine
 async function run () {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: [
+            '--no-sandbox'
+        ],
+        headless: true
+    });
     const page = await browser.newPage();
     await page.goto(ams_url, {waitUntil: 'load', timeout: 0});
     await page.click('.pop-up');
@@ -21,17 +38,3 @@ async function run () {
 }
 
 run();
-
-// pseudocode
-// open ams - attendence management system - done
-// click "submit attendence" button - done
-
-// fill form
-// input email - doing
-// screenshot page after submit attendence
-// input password
-// check "Work From Home" radio button
-// select "check In" from the option
-// click "Submit" button
-
-// screen shot for testing purpose
