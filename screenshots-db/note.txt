@@ -1,3 +1,1 @@
 this file is made to just make sure that the folder screenshot_db is not empty
-const email = "";
-const password = "";
