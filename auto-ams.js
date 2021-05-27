@@ -1,9 +1,11 @@
 const puppeteer = require('puppeteer');
+const dotenv = require('dotenv');
+dotenv.config();
 
-// requirements
-const ams_url = "https://hrm.ingnepal.com/Security/Account/Login";
-const email = "";
-const password = "";
+// system requirements
+const ams_url = process.env.URL;
+const email = process.env.EMAIL;
+const password = process.env.PASSWORD;
 
 // input filtration
 const in_put = process.argv[2].toLowerCase();
@@ -34,8 +36,8 @@ async function run () {
     await page.type("#frmAttendanceQuickRequest #LoginID", email);
     await page.type("#frmAttendanceQuickRequest #LoginPassword", password);
     await page.select("#Direction", in_out);
-    await page.click('#frmAttendanceQuickRequest #submit');
-    await page.waitForTimeout(3000);
+    // await page.click('#frmAttendanceQuickRequest #submit');
+    // await page.waitForTimeout(3000);
     await page.screenshot({path : 'screenshots-db/screenshot.png'});
     browser.close();
 }
