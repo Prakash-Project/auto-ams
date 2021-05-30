@@ -1,5 +1,3 @@
-const {in_out, userInput} = require('./user_input');
-
 const puppeteer = require('puppeteer');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -10,7 +8,18 @@ const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
 
 // input filtration
-userInput()
+const in_put = process.argv[2].toLowerCase();
+var in_out = "";
+
+if(in_put == 'in'){
+    in_out = "In"
+}else if (in_put == 'out') {
+    in_out = "Out"
+}
+else{
+    console.log('Either type IN or OUT and TRY AGAIN')
+    return
+}
 
 // core engine
 async function run () {
