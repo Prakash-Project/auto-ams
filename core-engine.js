@@ -14,8 +14,8 @@ module.exports = async function CoreEngine (url, email, password, in_out) {
     await page.type("#frmAttendanceQuickRequest #LoginID", email);
     await page.type("#frmAttendanceQuickRequest #LoginPassword", password);
     await page.select("#Direction", in_out);
-    // await page.click('#frmAttendanceQuickRequest #submit');
-    // await page.waitForTimeout(3000);
+    await page.click('#frmAttendanceQuickRequest #submit');
+    await page.waitForTimeout(3000);
     await page.screenshot({path : 'screenshots-db/screenshot.png'});
     browser.close();
 }
