@@ -18,4 +18,5 @@ auto checkin & checkout
 --> clone
 --> npm i
 --> change your email and password in the env file
---> node auto-ams.js
+--> to checkIN: node auto-ams.js in
+--> to checkOUT: node auto-ams.js out
