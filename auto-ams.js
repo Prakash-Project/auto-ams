@@ -22,4 +22,4 @@ else{
 }
 
 // running core engine
-CoreEngine(ams_url, email, password, in_out);
+CoreEngine(ams_url, email, password, in_out, 'wfo');
