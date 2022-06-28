@@ -21,5 +21,12 @@ else{
     return
 }
 
+// time
+// check in time e.g. 10 AM
+// check out time e.g. 5 PM
+// execute code
+//  check in time CoreEngine(ams)
+//  checkout out time
+
 // running core engine
-CoreEngine(ams_url, email, password, in_out);
+// CoreEngine(ams_url, email, password, in_out, 'wfo');
