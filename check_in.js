@@ -7,8 +7,8 @@ const ams_url = process.env.URL;
 const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
 
-var checkIn_time = 1400
-var checkout_time = 1150
+var checkIn_time = 1001
+var checkout_time = 2200
 
 // finding current date and time
 var findTime = () => {
@@ -39,8 +39,8 @@ while (true) {
 }
 
 // pseudocode
-// check in time e.g. 10:00
-// check out time e.g. 17:00 
+// check in time e.g. 14:00
+// check out time e.g. 22:00 
 
 // check date 
 //      if its sunday or saturday donot execute the code
