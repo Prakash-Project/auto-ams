@@ -5,6 +5,7 @@ auto ams ;)
 --> clone
 --> npm i
 --> change your email and password in the env file
+--> add some command in your linux (for executing command once in every day)
 --> execute code
 
 # algorithm : process
