@@ -1,3 +1,6 @@
+// this file might be taken over by check_in.js file
+// more automation
+
 const CoreEngine = require("./core-engine")
 const dotenv = require('dotenv');
 dotenv.config();
