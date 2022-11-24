@@ -15,3 +15,7 @@ if day is new day
         Check IN
     if time is 5:00 PM
         Check OUT
+
+# feature request
+- save the screenshot with the name : date + time everyday
+- 
