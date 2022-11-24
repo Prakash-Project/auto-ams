@@ -18,4 +18,3 @@ if day is new day
 
 # feature request
 - save the screenshot with the name : date + time everyday
-- 
