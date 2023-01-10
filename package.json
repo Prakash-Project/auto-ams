@@ -19,6 +19,6 @@
   "homepage": "https://github.com/Shresthaprakash75/auto-ams#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "puppeteer": "^9.1.1"
+    "puppeteer": "^19.5.0"
   }
 }
